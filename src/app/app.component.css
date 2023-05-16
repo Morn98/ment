@@ -7,23 +7,3 @@
     left: 0;
     right: 0; 
   }
-
-#logo {
-    max-width: 175px;
-    max-height: 150px;
-    margin: 40px;
-}
-
-#pb {
-    width: 60%;
-    border-radius: 50%;
-    border: 5px solid grey;
-}
-
-.vertical-line {
-    border-right: grey solid;
-    width: 5px; 
-    float: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}

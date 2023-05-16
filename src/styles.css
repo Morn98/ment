@@ -2,3 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#logo {
+    max-width: 175px;
+    max-height: 150px;
+    margin: 40px;
+}
+
+.vertical-line {
+    border-right: grey solid;
+    width: 5px; 
+    float: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
