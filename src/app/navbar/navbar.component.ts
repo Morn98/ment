@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+
+  navigationItems = ['Home', 'About', 'Skills', 'Experience', 'Contact'];
+
   navbarOpen = false;
 
   toggleNavbar() {

@@ -1,14 +1,19 @@
-<mat-toolbar color="transparent" class="navbar">
-    <div fxShow="false" fxShow.gt-xs>
-      <!-- Desktop-Ansicht -->
-      <span>Home</span>
-      <span>Über uns</span>
-      <span>Kontakt</span>
+<div class="bg-gradient-to-r from-sky-300 to-indigo-300">
+  <mat-toolbar color="transparent" class="navbar">
+    <div id=logo-navbar>
+      <!-- Hier füge dein Logo oder andere Inhalte hinzu -->
+      <img style="width: 56px; height:56px;" src="assets/images/logo.png" alt="logo-navbar">
     </div>
-    <div fxShow="true" fxShow.lt-sm>
+    <div class="nav.links" fxShow="true" fxHide.lt-sm fxLayout="row" fxLayoutAlign="end center" >
+      <span fxFlex="auto" class="text-center" *ngFor="let item of navigationItems">
+        {{ item }}
+      </span>
+    </div>
+    <div fxShow="false" fxShow.lt-sm class="navbar-mobile">
       <!-- Mobile-Ansicht -->
-      <button mat-icon-button (click)="toggleNavbar()">
+      <button class="place-content-end" mat-icon-button (click)="toggleNavbar()">
         <mat-icon>menu</mat-icon>
       </button>
     </div>
   </mat-toolbar>
+</div>

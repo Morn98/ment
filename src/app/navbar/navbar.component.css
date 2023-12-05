@@ -1,19 +1,36 @@
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%;
-    background-color: transparent;
-    box-shadow: none;
-    color: white;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0); /* Hier kannst du die Transparenz einstellen */
+    color: grey;
+    justify-content: space-between; /* Platzierung der Elemente am Anfang und Ende der Navbar */
+    align-items: center; 
+    padding: 10px; 
+
+    .navbar-mobile {
+      flex-basis: content;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .navbar div {
+    width: 33%;
   }
   
   .navbar span {
     margin-left: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   .navbar span:hover {
-    border-bottom: 2px solid white;
+    background-color: #a5b4fc;
+    color: white; 
   }
   
   /* Stil für mobile Ansicht */
