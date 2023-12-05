@@ -1,0 +1,14 @@
+<mat-toolbar color="transparent" class="navbar">
+    <div fxShow="false" fxShow.gt-xs>
+      <!-- Desktop-Ansicht -->
+      <span>Home</span>
+      <span>Über uns</span>
+      <span>Kontakt</span>
+    </div>
+    <div fxShow="true" fxShow.lt-sm>
+      <!-- Mobile-Ansicht -->
+      <button mat-icon-button (click)="toggleNavbar()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>

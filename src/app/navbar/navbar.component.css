@@ -1,0 +1,22 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+  }
+  
+  .navbar span {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .navbar span:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  /* Stil für mobile Ansicht */
+  .mat-icon-button {
+    color: white;
+  }
